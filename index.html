@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | FlatMate NG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="signup-container">
+
+        <h1>Sign Up</h1>
+
+        <form>
+
+            <div class="form-group">
+                <label for="fullname">Full name</label>
+                <input type="text" id="fullname"
+                    placeholder="Enter your full name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email"
+                    placeholder="Enter your email">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone"
+                    placeholder="Enter your phone number">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password"
+                    placeholder="Create password">
+            </div>
+
+            <div class="form-group">
+                <label for="confirm-password">
+                    Confirm Password
+                </label>
+                <input type="password" id="confirm-password"
+                    placeholder="Confirm password">
+
+                <p class="password-match">
+                    ✓ Password match!
+                </p>
+            </div>
+
+            <div class="terms">
+                <input type="checkbox" id="terms">
+                <label for="terms">
+                    Accept <a href="#">Terms</a> and
+                    <a href="#">Conditions</a>
+                </label>
+            </div>
+
+            <button type="submit" disabled>
+                Sign Up
+            </button>
+
+        </form>
+
+        <div class="divider">
+            <span></span>
+            <p>Or continue with</p>
+            <span></span>
+        </div>
+
+        <div class="social-login">
+            <a href="#" aria-label="Google">G</a>
+            <a href="#" aria-label="Apple">●</a>
+            <a href="#" aria-label="Facebook">f</a>
+        </div>
+
+        <p class="signin">
+            Already have an account?
+            <a href="#">Sign In</a>
+        </p>
+
+    </main>
+
+</body>
+</html>
