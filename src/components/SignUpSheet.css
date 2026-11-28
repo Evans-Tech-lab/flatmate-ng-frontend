@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
+.sheet-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+  z-index: 50;
+}
+
+.sheet-backdrop.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.signup-sheet {
+  width: 100%;
+  max-width: 480px;
+  max-height: 90dvh;
+  overflow-y: auto;
+  background: #ffffff;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  padding: 20px 18px 28px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.sheet-backdrop.open .signup-sheet {
+  transform: translateY(0);
+}
+
+.signup-title {
+  text-align: center;
+  margin: 0 0 16px;
+  font-size: 1.35rem;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.input-group label {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding: 11px 40px 11px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+.input-wrapper.active-field input,
+.input-wrapper input:focus {
+  border-color: #16796f;
+}
+
+.input-icon {
+  position: absolute;
+  right: 12px;
+  pointer-events: none;
+}
+
+.password-match {
+  margin: 2px 0 0;
+  font-size: 0.85rem;
+  color: #16796f;
+}
+
+.terms-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.875rem;
+  margin-top: 2px;
+}
+
+.signup-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 4px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  background: #f8fafc;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.social-section {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.social-label {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icons button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: #f1f5f9;
+  font-size: 1.05rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.signin-footer {
+  margin-top: 16px;
+  text-align: center;
+  font-size: 0.875rem;
+}
